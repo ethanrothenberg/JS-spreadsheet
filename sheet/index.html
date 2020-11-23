@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Spreadsheet</title>
+  </head>
+  <body>
+    <script>
+      var html =
+        '<form> <table id="table"><tr> <div/><th id = topLeftFiller></th>';
+      for (var h = 65; h < 91; h++) {
+        html += '<th class="topHeader">' + String.fromCharCode(h) + "</th>";
+      }
+      html += "</tr>";
+      var i = 1;
+      for (i; i < 51; i++) {
+        html += "<tr> " + '<th class="leftHeader">' + i + "</th>";
+        for (var j = 0; j < 26; j++) {
+          const identifier = String.fromCharCode(j + 65) + i;
+          html += `<td><input class="cell" type="text" id=${identifier}></td>`;
+        }
+        html += "</tr>";
+      }
+      html += "</table> </form>";
+      document.body.innerHTML += html;
+    </script>
+  </body>
+  <script src="dist/main.js"></script>
+</html>

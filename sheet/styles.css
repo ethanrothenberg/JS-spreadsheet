@@ -1,0 +1,33 @@
+.cell {
+  width: 80px;
+  background-color: white;
+}
+body {
+  background-color: #ccdbee;
+}
+table,
+td {
+  border: 2px grey;
+  border-collapse: collapse;
+}
+th {
+  position: sticky;
+  background: white;
+  border: 6px black;
+  border-bottom-color: #e6a660;
+}
+.leftHeader {
+  left: 0;
+}
+.topHeader {
+  top: 0;
+}
+#topLeftFiller {
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 19px;
+  height: 20px;
+  position: sticky;
+  z-index: 1;
+}

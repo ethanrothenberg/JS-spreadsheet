@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
